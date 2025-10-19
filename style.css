@@ -1,14 +1,21 @@
 body {
 	background-color: #000;
 	color: white;
+	margin: 0px;
+	padding: 0px;
 }
 
 h1,
 h2,
-h3,
-p {
+h3 {
 	/* Defaulting to no margin so I can set it myself when I want it */
 	margin: 0px;
+	text-align: center;
+}
+
+p {
+	margin: 0px;
+	text-align: center;
 }
 
 .IntroBlock {
@@ -18,7 +25,6 @@ p {
 
 	font-family: 'FiraMono Nerd Font Mono', 'Arial Narrow', Arial, sans-serif;
 	font-weight: 800;
-	text-align: center;
 
 	padding-top: 8px;
 }
@@ -39,4 +45,78 @@ p {
 	object-fit: cover;
 	height: inherit;
 	border-radius: 100%;
+}
+
+.SkillsBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: transparent;
+}
+
+.Skills {
+	padding: 8px;
+	width: 75%;
+
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+
+
+	background-color: white;
+	border-radius: 16px;
+}
+
+.Skills>span {
+	color: black;
+}
+
+.ContactBlock {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.ContactBlock>h1 {
+	margin: 0px 0px 16px 0px;
+}
+
+.ContactBubbles {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	margin: 0px 0px 16px 0px;
+}
+
+.ContactBubbles>span {
+	margin: 0px 4px 0px 4px;
+	background-color: white;
+
+	border-radius: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+}
+
+.Footer {
+	width: 100%;
+	height: 10vh;
+	text-align: center;
+	color: gray;
+	background-color: #111;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.Footer>p>a {
+	text-decoration: none;
+	color: #555
+}
+
+
+.Footer>p>a:hover {
+	text-decoration: underline;
+	color: #666
 }
