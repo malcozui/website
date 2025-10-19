@@ -1,4 +1,42 @@
-* {
-	background-color: transparent;
-	color: red;
+body {
+	background-color: #000;
+	color: white;
+}
+
+h1,
+h2,
+h3,
+p {
+	/* Defaulting to no margin so I can set it myself when I want it */
+	margin: 0px;
+}
+
+.IntroBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-family: 'FiraMono Nerd Font Mono', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 800;
+	text-align: center;
+
+	padding-top: 8px;
+}
+
+.IntroBlock>h1 {
+	font-size: 64pt;
+	margin: 10px 0px 10px 0px;
+}
+
+.IntroBlock>p {
+	font-size: 16pt;
+	margin: 0px;
+}
+
+.HeaderImage {
+	width: 10vw;
+	aspect-ratio: 1/ 1;
+	object-fit: cover;
+	height: inherit;
+	border-radius: 100%;
 }
